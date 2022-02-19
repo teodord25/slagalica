@@ -1,0 +1,756 @@
+#
+2016-01-01
+
+Italijanski režiseri
+
+Federiko - Felini
+Roberto - Roselini
+Etore - Skola
+Paolo - Sorentino
+Vitorio - de Sika
+Lukino - Viskonti
+Mikelanđelo - Antonioni
+Bernardo - Bertoluči
+
+#
+2016-01-02
+
+Glavni gradovi i države
+
+Suva - Fidži
+Seul - Južna Koreja
+Prag - Češka
+Sana - Jemen
+Riga - Letonija
+Džuba - Južni Sudan
+Lima - Peru
+Kito - Ekvador
+
+#
+2016-01-03
+
+Francuski slikari
+
+Klod - Mone
+Edgar - Dega
+Kamij - Pisaro
+Gistav - Kajbot
+Alfred - Sisli
+Eduar - Mane
+Žorž - Brak
+Pjer-Ogist - Renoar
+
+#
+2016-01-04
+
+Domaće TV serije i porodice u centru njihove radnje
+
+Porodično blago - Gavrilovići
+Srećni ljudi - Golubovići
+Stižu dolari - Ljutić
+Ljubav, navika, panika - Milićević
+Miris kiše na balkanu - Salom
+Selo gori, a baba se češlja - Raković
+Otvorena vrata - Anđelić-Jakovljević
+Bolji život - Popadići
+
+#
+2016-01-05
+
+Filmovi i serije i uloge Ljubiše Samardžića
+
+Policajac s Petlovog brda - Boško Simić
+Peščani grad - Smoki
+Specijalno vaspitanje - Milicioner Cane
+Valter brani Sarajevo - Zis
+Kuda idu divlje svinje - Crni Rok
+Orlovi rano lete - Nikoletina Bursać
+Vruć vetar - Borivoje Šurdilović
+Tri karte za Holivud - Limijer
+
+#
+2016-01-06
+
+Imena i prezimena evropskih državnika
+
+Aldo - Moro
+Vinston - Čerčil
+Fransoa - Miteran
+Adolfo - Suarez
+Džon - Mejđžor
+Helmut - Šmit
+Valeri - Žiskar D'esten
+Vili - Brant
+
+#
+2016-01-07
+
+Gradovi i njihovi nadimci
+
+Las Vegas - Grad Greha
+Bejrut - Pariz Istoka
+Detroit - Motor Siti
+Pitcburg - Grad Čelika
+Atlanta - Velika Breskva
+Nju Orleans - Nola
+Stokholm - Venecija Severa
+Novi Sad - Srpska Atina
+
+#
+2016-01-08
+
+Imena i prezimena glumaca
+
+Džeremi - Ajrons
+Džim - Keri
+Džoni - Dep
+Džerad - Leto
+Džejson - Momoa
+Džek - Lemon
+Džefri - Raš
+Džo - Peši
+
+#
+2016-01-09
+
+Imena estradnih umetnika i pseudonimi
+
+Fahreta Jahić - Lepa Brena
+Radojka Adžić - Dara Bubamara
+Snežana Berić - Ekstra Nena
+Velibor Miljković - Toni Montano
+Nada Polić - Ana Bekuta
+Zilha Barjaktarević - Silvana Armenulić
+Leposava Musović - Lepa Lukić
+Predrag Živković - Tozovac
+
+#
+2016-01-10
+
+Imena i prezimena glumaca
+
+Neda - Arnerić
+Seka - Sabljić
+Jelica - Sretenović
+Sonja - Savić
+Ljiljana - Dragutinović
+Zlata - Numanagić
+Žiža - Stojanović
+Branka - Veselinović
+
+#
+2016-01-11
+
+Aktivni vulkani i države
+
+Etna - Italija
+Hekla - Island
+Piko de Teide - Španija
+Ruapehu - Novi Zeland
+Nijamuragira - Kamerun
+Mauna Loa - Havaji (SAD)
+Sufrijer - Sveti Vinsent i Grenadini
+Tambora - Indonezija
+
+#
+2016-01-12
+
+Poznata braća fudbaleri
+
+Sead i Safet - Sušić
+Vahadin i Husref - Musemić
+Goran i Zoran - Đorović
+Dragoljub i Branko - Brnović
+Boško i Milko - Đurovski
+Zlatko i Zoran - Vujović
+Ilija i Vladimir - Ivić
+Miloš, Milorad i Bora - Milutinović
+
+#
+2016-01-13
+
+Poznate političarke
+
+Golda - Meir
+Milka - Planinc
+Jadranka - Kosor
+Benazir - Buto
+Angela - Merkel
+Margaret - Tačer
+Kondoliza - Rajs
+Julija - Timošenko
+
+#
+2016-01-14
+
+Poznate pesme iz filmova
+
+Za Beograd - Ko to tamo peva
+Nesanica - Ivkova slava
+Pukni zoro - Montevideo, Bog te video
+Nemoj da brigaš - Balkan ekspres
+Haljinica boje lila - Rat uživo
+Flojd - Nacionalna klasa
+Svečane bele košulje - Crni bombarder
+Mesečina - Podzemlje
+
+#
+2016-01-15
+
+Geografski pojmovi i ono što predstavljaju
+
+Prokuplje - Grad
+Stolovi - Planina
+Pariguz - Jezero
+Rzav - Reka
+Vrujci - Banja
+Risovača - Pećina
+Štrand - Plaža
+Oplenac - Brdo
+
+#
+2016-01-16
+
+Strane kompanije i njihovo primarno polje delovanja
+
+eBay - onlajn trgovina
+Chevron - nafta i gas
+Swarovski - proizvodi od kristala
+Tupperware - posuđe
+Hilti - građevinski alat
+Piatnik - karte za igranje
+Mahindra - vozila
+Nintendo - video-igre
+
+#
+2016-01-17
+
+Nagrade i oblasti u kojima se dodeljuju
+
+Laureus - Sport
+Disova nagrada - Poezija
+Zlatni lav - Film
+Fildsova medalja - Matematika
+Emi - Televizija
+Gremi - Muzika
+Toni - Pozorište
+Tarnerova nagrada - Vizuelna umetnost
+
+#
+2016-01-18
+
+Filmovi i glavni glumci
+
+Tri Kralja - Džordž Kluni
+Tri musketara - Čarli Šin
+Tri Dana kondora - Robert Retford
+Pljačka trećeg Rajha - Dragan Nikolić
+Treći čovek - Džozef Koten
+Treća sreća - Radoš Bajić
+Tri amigosa - Stiv Martin
+Tri Karte za Holivud - Branislav Lečić
+
+#
+2016-01-19
+
+Pesme i izvođači
+
+Priča o Žiki Živcu - Riblja Čorba
+Luka - Suzan Vega
+Boža zvani Pub - Đorđe Balašević
+Ubiše Pabla - Deca Loših Muzičara
+Bobi Braun - Frenk Zapa
+Gile šampion - Zabranjeno Pušenje
+E, moj Saša - Novi Fosili
+Alexandro - Lejdi Gaga
+
+#
+2016-01-20
+
+Imena, patronimi i prezimena ruskih/sovjetskih književnika
+
+Boris Leonidovič - Pasternak
+Josif Aleksandrovič - Brodski
+Mihail Afanasijevič - Bulgakov
+Aleksandar Sergejevič - Puškin
+Anton Pavlovič - Čehov
+Nikolaj Vasiljevič - Gogolj
+Lav Nikolajevič - Tolstoj
+Fjodor Mihajlovič - Dostojevski
+
+#
+2016-01-21
+
+Ličnosti po kojima su nazvane video-igre i njihovi sportovi
+
+Majkl Džordan - Košarka
+Vejn Grecki - Hokej na ledu
+Dejli Tompson - Atletika
+Džona Lomu - Ragbi
+Brajan Lara - Kriket
+Kolin Makre - Reli
+Toni Hok - Skejtbording
+Tajger Vuds - Golf
+
+#
+2016-01-22
+
+Mesta bitaka iz Prvog svetskog rata i današnje države
+
+Galipolje - Turska
+Baku - Azerbejdžan
+Jiland - Danska
+Tanenberg - Poljska
+Mojkovac - Crna Gora
+Dobro Polje - Severna Makedonija
+Cer - Srbija
+Soma - Francuska
+
+#
+2016-01-23
+
+Istorijske lokacije i današnje države u kojima se nalazi
+
+Stounhendž - Velika Britanija
+Karnak - Egipat
+Maču Pikču - Peru
+Maratonsko polje - Grčka
+Teutoburška šuma - Nemačka
+Gobekli Tepe - Turska
+Zama - Tunis
+Vaterlo - Belgija
+
+#
+2016-01-24
+
+Muzičari protagonisti bigrafskih filmova
+
+Pijanista - Vladislav Špilman
+Boemska rapsodija - Fredi Merkjuri
+Roketmen - Elton Džon
+Rudareva kći - Loreta Lin
+Lejdi peva bluz - Bili Holidej
+Hod po ivici - Džoni Keš
+La Bamba - Riči Valens
+Život u ružičastom - Edit Pjaf
+
+#
+2016-01-25
+
+Književna dela i autori
+
+Orlovi rano lete - Branko Ćopić
+Galeb - Anton Čehov
+Družina sinji galeb - Tone Seliškar
+Albatros - Šarl Bodler
+Ubiti pticu rugalicu - Harper Li
+Plava ptica - Moris Meterlink
+Gavran - Edgar Alan Po
+Ranjeni orao - Mir-Jam
+
+#
+2016-01-26
+
+Osvajačice olimpijskih medalja za Jugoslaviju i Srbiju
+
+Jelena - Nikolić
+Jovana - Brakočević
+Svetlana - Kitić
+Jasna - Šekarić
+Saša - Čađo
+Ivana - Španović
+Anđelija - Arbutina
+Aleksandra - Ivošev
+
+#
+2016-01-27
+
+Slavne životinje iz stvarnog života
+
+Rin Tin Tin - pas
+Knut - beli medved
+Panksatoni Fil - mrmot
+Koko - gorila
+Sekretarijat - trkački konj
+Sami - šimpanza
+Joca - delfin
+Doli - ovca
+
+#
+2016-02-01
+
+Vrste sisara i porodice kojima pripadaju
+
+Džinovska panda - Medvedi
+Merkat - Mungos
+Los - Jeleni
+Lasica - Kune
+Vikunja - Kamile
+Grejvijeva zebra - Konji
+Ocelot - Mačke
+Vuk - Psi
+
+#
+2016-02-02
+
+Jezera u Srbiji i mesta u njihovoj blizini
+
+Srebrno jezero - Veliko Gradište
+Bovansko jezero - Aleksinac
+Potpećko jezero - Nova Varoš
+Zavojsko jezero - Pirot
+Gazivode - Zubin Potok
+Palićko jezero - Subotica
+Zaovinsko jezero - Mitrovac na Tari
+Vlasinsko jezero - Crna Trava
+
+#
+2016-02-03
+
+Izvodjači i pesme
+
+Jesen u meni - Parni valjak
+Deni - COD
+Na badnje veče - Prljavo kazalište
+Kada padne noć - Riblja čorba
+Ringišpil - Đorđe Balašević
+Krivo je more - Divlje jagode
+Ružica si bila - Bijelo dugme
+Ti si mi u krv - Zdravko Čolić
+
+#
+2016-02-04
+
+Poznate simfonije i njihovi drugi nazivi
+
+Betovenova treća - Eroika
+Betovenova šesta - Pastoralna simfonija
+Malerova osma - Simfonija Hiljade
+Šubertova osma - Nedovršena simfonija
+Mocartova trideset osma - Praška simfonija
+Berliozova prva - Fantastična simfonija
+Šostakovičeva sedma - Lenjigradska simfonija
+Šesta Čajkovskog - Patetična Simfonija
+
+#
+2016-02-05
+
+Glavni gradovi i države
+
+Praja - Zelenortska ostrva
+Prag - Česka
+Katmandu - Nepal
+Maputo - Mozambik
+Beograd - Srbija
+Bamako - Mali
+La Paz - Bolivija
+Otava - Kanada
+
+#
+2016-02-06
+
+Svetske luke
+
+Roterdam - Holandija
+Šangaj - Kina
+Durban - Južnoafrička Republika
+Pert - Australija
+Verakruz - Meksiko
+Lisabon - Portugal
+Kobe - Japan
+Dover - Velika Britanija
+
+#
+2016-02-07
+
+Proizvođači automobila i zemlje
+
+Aston Martin - Velika Britanija
+Hyundai - Južna Koreja
+Maserati - Italija
+Saab - Švedska
+Seat - Španija
+Škoda - Česka
+Audi - Nemačka
+Dacia - Rumunija
+
+#
+2016-02-08
+
+Gradovi i države
+
+Edinburg - Velika Britanija
+Elbasan - Albanija
+Eger - Mađarska
+Enshede - Holandija
+Elče - Španija
+Erfurt - Nemačka
+Eskišehir - Turska
+Edmonton - Kanada
+
+#
+2016-02-09
+
+Poluostrva i gradovi koji se nalaze na njima
+
+Balkansko polusotrvo - Plovdiv
+Korejsko poluostrvo - Busan
+Malajsko poluostrvo - Kuala Lumpur
+Florida - Tampa
+Jukatan - Kankun
+Apeninsko poluostrvo - Bari
+Jiland - Alborg
+Pirinejsko poluostrvo - Braga
+
+#
+2016-02-10
+
+Istorijske regije i države kojima danas pripadaju
+
+Vlaška - Rumunija
+Tripolitanija - Libija
+Pendžab - Indija-Pakistan
+Štajerska - Slovenija-Austrija
+Slavonija - Hrvatska
+Livonija - Letonija-Estonija
+Hidžaz - Saudijska Arabija
+Anadolija - Turska
+
+#
+2016-02-11
+
+Glumci i njihovi nadimci
+
+Aleksandar Srećković - Kubura
+Nebojša Ilić - Cile
+Slobodan Ćustić - Alija
+Ratko Tankosić - Sarma
+Predrag Miljković - Pepi
+Dragoljub Ljubičić - Mićko
+Milan Gutović - Lane
+Danilo Stojković - Bata
+
+#
+2016-02-12
+
+Književna dela i autori
+
+Kašika - Antonije Isaković
+Đulići uveoci - Jovan Jovanović Zmaj
+Bašta, pepeo - Danilo Kiš
+Danga - Radoje Domanović
+Omer-paša Latas - Ivo Andrić
+Gluvi barut - Branko Ćopić
+Derviš i smrt - Meša Selimović
+Lagum - Svetlana Velmar-Janković
+
+#
+2016-02-13
+
+Imena i prezimena poznatih naučnika
+
+Leonard - Ojler
+Majkl - Faradej
+Čarls - Darvin
+Karl Fridrih - Gaus
+Nikola - Kopernik
+Blez - Paskal
+Tiho - Brahe
+Galileo - Galilej
+
+#
+2016-02-14
+
+Prvi predsednici država nastalih 1990-ih
+
+Boris Jeljcin - Rusija
+Milan Kučan - Slovenija
+Saparmurat Nijazov - Turkmenistan
+Aleksandar Lukašenko - Belorusija
+Leonid Kravčuk - Ukrajina
+Nursultan Nazarbajev - Kazahstan
+Kiro Gligorov - Makedonija
+Dobrica Ćosić - SR Jugoslavija
+
+#
+2016-02-15
+
+Evropske reke i zemlje u kojima se nalazi njihovo ušće
+
+Ebro - Španija
+Dnjepar - Ukrajina
+Neva - Rusija
+Visla - Poljska
+Vardar - Grčka
+Laba - Nemačka
+Arno - Italija
+Rona - Francuska
+
+#
+2016-02-16
+
+Rase pasa koji igraju naslovne uloge u filmovima
+
+Betoven - Bernardinac
+K-9 - Nemački ovčar
+Lesi se vraća kući - Škotski ovčar
+Hačiko:Priča o psu - Akita
+Togo - Sibirski haski
+Tarner i Huč - Bordoška doga
+Badi pas košarkaš - Zlatni retriver
+Marli i ja - Labrador retriver
+
+#
+2016-02-17
+
+Igre na tabli i njihov kratak opis
+
+Monopol - Teranje protivnika u bankrot
+Kluedo - Rešavanje ubistva
+Pačizi - Preteča "Čoveče ne ljuti se"
+Šogi - Japanski šah
+Skrebl - Sastavljanje reči
+Jedi-jedi - Antišah
+Pictionary - Pogađanje pomoću crteža
+Riziko - Rat i osvajanje teritorija
+
+#
+2016-02-18
+
+Svetski monarsi i države
+
+Kralj Felipe II - Šapanija
+Veliki Vojvoda Anri - Luksemburg
+Kralj Tupou VI - Tonga
+Sultan Hasanal Bolkijah - Brunej
+Car Naruhito - Japan
+Kralj Harald V - Norveška
+Kralj Rama X - Tajland
+Knez Albert II - Monako
+
+#
+2016-02-19
+
+Spoj državu sa regijom u kojoj se nalazi
+
+Bangladeš - Južna Azija
+Jordan - Bliski Istok
+Mongolija - Srednja Azija
+Severna Koreja - Daleki Istok
+Istočni Timor - Jugoistočna Azija
+Norveška - Severna Evropa
+Rusija - Istočna Evropa
+Portugalija - Južna Evropa
+
+#
+2016-02-20
+
+Poznati šveđani i oblasti u kojima su se proslavili
+
+Anders Celzijus - Nauka
+Astrid Lindgren - Književnost
+Ingmar Stenmark - Skijanje
+Ingrid Bergman - Gluma
+Karl Bilt - Politika
+Ingvar Kampard - Biznis
+Nene Čeri - Muzika
+Tomas Brolin - Fudbal
+
+#
+2016-02-21
+
+Poznati španski glumci i glumice
+
+Antonio - Banderas
+Santjago - Segura
+Belen - Rueda
+Paz - Vega
+Mario - Kasas
+Rosi - de Palma
+Havijer - Bardem
+Penelope - Kruz
+
+#
+2016-02-22
+
+Matematika
+
+123+567 - 690
+908*6 - 5448
+4*12 - 48
+120-48 - 72
+1+1+1 - 3
+1+2+3 - 6
+3+2+2 - 7
+123456+7890 - 131346
+
+#
+2016-02-23
+
+Ostrva i najveći gradovi na njima
+
+Sardinija - Kaljari
+Jamajka - Kingston
+Sumatra - Medan
+Kjušu - Fukoka
+Elba - Portoferajo
+Mindanao - Davao
+Korzika - Ajačio
+Krit - Iraklion
+
+#
+2016-02-24
+
+Slavne muzičke ličnosti i njihovi nadimci
+
+Elvis Prisli - Kralj rokenrola
+Erik Klepton - Spora ruka
+Jozef Hajdn - Otac simfonije
+Majkl Džekson - Kralj popa
+Brus Springstin - Gazda
+Nikolo Paganini - Đavolji violinsista
+Džejms Braun - Kum soula
+Antonio Vivaldi - Crveni sveštenik
+
+#
+2016-02-25
+
+Reči stranog porekla i njihovo značenje
+
+kontrabanda - krijumčarenje
+konjektura - pretpostavka
+konsternacija - zaprepašćenje
+kupa - konus
+konsonant - suglasnik
+kondir - vrč
+konvent - samostan
+konsijerž - nastojnik
+
+#
+2016-02-26
+
+Poznate ličnosti i vekovi u kojima su živeli/e
+
+Jovanka Orleanka - XV
+Marija Terezija - XVIII
+Toma Akvinski - XIII
+Indira Gandi - XX
+Nostradamus - XVI
+Rembrant - XVII
+Stefan Nemanja - XII
+Abraham Linkoln - XIX
+
+#
+2016-02-27
+
+Filmovi i glavni glumci
+
+Kišni čovek - Dastin Hofman
+Čovek na mesecu - Džim Keri
+Čovek ptica - Majkl Kiton
+Četvrti čovek - Nikola Kojo
+Čovek slon - Entoni Hopkins
+Čovek od čelika - Henri Kavil
+Mrtav čovek hoda - Šon Pen
+Treći čovek - Džozef Koten
+
