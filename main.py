@@ -489,62 +489,58 @@ def igra_spojnice(stdscr):
     # Game loop
     while key != 9:
         key = window.getch()
-
-        # beskonacna petlja dok korisnik ne pritisne "Enter"
         while key != 10 and _:
             key = window.getch()
             t_0 = time.time()
 
-        # ` prikazuje resenje (za testiranje)
         if key == ord('`'):
             pass
 
-        # samo jednom da se pokrene
         if _:
             for i in range(3):
                 for j in range(95):
                     window.addstr(21 + i, 0 + j, " ", curses.color_pair(1))
             window.addstr(24, 0, "Излазак из игре притиском тастера \"Tab\"".rjust(99), curses.color_pair(1))
 
-            linije = open("txt_fajlovi/spojnice.txt", "r").readlines()
-            indeksi = [i for i, j in enumerate(linije) if j == "#\n"]
+            lines = open("txt_fajlovi/spojnice.txt", "r").readlines()
+            indicies = [i for i, j in enumerate(lines) if j == "#\n"]
 
-            index = random.choice(indeksi)
+            index = random.choice(indicies)
             
-            zadatak = linije[index + 3][:-1]
+            task = lines[index + 3][:-1]
             
-            window.addstr(1, 9, zadatak.center(83), curses.color_pair(1))
+            window.addstr(1, 9, task.center(83), curses.color_pair(1))
 
-            tabela = linije[index + 5: index + 13]
+            table = lines[index + 5: index + 13]
 
-            tabela2 = [i.replace(" - ", "/")[:-1] for i in tabela]
+            table2 = [i.replace(" - ", "/")[:-1] for i in table]
 
-            indeksi_2 = []
-            for s in tabela2:
+            indicies_2 = []
+            for s in table2:
                 for i,j in enumerate(s):
                     if j == "/":
-                        indeksi_2.append(i)
+                        indicies_2.append(i)
 
-            levo = [tabela2[i][:j] for i,j in enumerate(indeksi_2)]
-            desno = [tabela2[i][j+1:] for i,j in enumerate(indeksi_2)]
+            left = [table2[i][:j] for i, j in enumerate(indicies_2)]
+            right = [table2[i][j + 1:] for i, j in enumerate(indicies_2)]
 
-            spojeno = list(zip(levo, desno))
+            zipped = list(zip(left, right))
            
-            random.shuffle(levo)
+            random.shuffle(left)
 
-            random.shuffle(desno)
+            random.shuffle(right)
 
-            spojeno_random = list(zip(levo, desno))
+            zipped_random = list(zip(left, right))
 
-            resenje = {i: j for (i, j) in spojeno}
+            answer = {i: j for (i, j) in zipped}
 
-            boja = curses.color_pair(1)
+            color = curses.color_pair(1)
 
             for x in range(2):
                 for y in range(8):
-                    window.addstr(4 + (y * 2), 6 + (x * 49), spojeno_random[y][x].center(40), boja)
-             
-            levi = 0
+                    window.addstr(4 + (y * 2), 6 + (x * 49), zipped_random[y][x].center(40), color)
+
+            left_side = 0
             
             [window.addstr(4 + i, 50, "█", curses.color_pair(5)) for i in range(15)]
 
@@ -555,47 +551,47 @@ def igra_spojnice(stdscr):
             i = int(t // 2)
             j = int(t % 2)
     
-            window.addstr(4 + i, 50, progres_linija[j], curses.color_pair(6))
+            window.addstr(4 + i, 50, progress_bar[j], curses.color_pair(6))
         
         if t_1 > 60:
             for x in range(2):
                 for y in range(8):
-                    window.addstr(4 + (y * 2), 6 + (x * 49), spojeno[y][x].center(40), boja)
+                    window.addstr(4 + (y * 2), 6 + (x * 49), zipped[y][x].center(40), color)
 
             return out_of_time(window, 20, 2, 3, 1, 9, curses.color_pair(1))
 
         if key == 10 and not _:
             if x == 0:
-                if levi:
-                    window.addstr(4 + (y * 2), 6 + (x * 49), spojeno_random[y][x].center(40), curses.color_pair(1))
+                if left_side:
+                    window.addstr(4 + (y * 2), 6 + (x * 49), zipped_random[y][x].center(40), curses.color_pair(1))
 
-                levi_index = (y, x)
-                levi = spojeno_random[y][x]
-                window.addstr(4 + (y * 2), 6 + (x * 49), spojeno_random[y][x].center(40), curses.color_pair(2))
+                left_index = (y, x)
+                left_side = zipped_random[y][x]
+                window.addstr(4 + (y * 2), 6 + (x * 49), zipped_random[y][x].center(40), curses.color_pair(2))
 
             if x == 1:
-                if levi:
+                if left_side:
 
-                    desni = spojeno_random[y][x]
+                    right_side = zipped_random[y][x]
 
-                    if resenje[levi] == desni:
-                        window.addstr(4 + (y * 2), 6 + (x * 49), spojeno_random[y][x].center(40), curses.color_pair(3))
-                        window.addstr(4 + (levi_index[0] * 2), 6 + (levi_index[1] * 49), spojeno_random    [levi_index[0]][levi_index[1]].center(40), curses.color_pair(3))
+                    if answer[left_side] == right_side:
+                        window.addstr(4 + (y * 2), 6 + (x * 49), zipped_random[y][x].center(40), curses.color_pair(3))
+                        window.addstr(4 + (left_index[0] * 2), 6 + (left_index[1] * 49), zipped_random[left_index[0]][left_index[1]].center(40), curses.color_pair(3))
                         correct += 1
 
                     else:
-                        window.addstr(4 + (y * 2), 6 + (x * 49), spojeno_random[y][x].center(40), curses.color_pair(4))
+                        window.addstr(4 + (y * 2), 6 + (x * 49), zipped_random[y][x].center(40), curses.color_pair(4))
                         window.getch()  
                         curses.napms(500)  
 
-                        window.addstr(4 + (levi_index[0] * 2), 6 + (levi_index[1] * 49), spojeno_random[levi_index[0]][levi_index[1]].center(40), curses.color_pair(1))
-                        window.addstr(4 + (y * 2), 6 + (x * 49), spojeno_random[y][x].center(40), curses.color_pair(1))
-                        levi = 0
+                        window.addstr(4 + (left_index[0] * 2), 6 + (left_index[1] * 49), zipped_random[left_index[0]][left_index[1]].center(40), curses.color_pair(1))
+                        window.addstr(4 + (y * 2), 6 + (x * 49), zipped_random[y][x].center(40), curses.color_pair(1))
+                        left_side = 0
 
                     if correct == 8:
                         for x in range(2):
                             for y in range(8):
-                                window.addstr(4 + (y * 2), 6 + (x * 49), spojeno[y][x].center(40), boja)
+                                window.addstr(4 + (y * 2), 6 + (x * 49), zipped[y][x].center(40), color)
 
                         return success(window, 20, 2, 3, 1, 9, curses.color_pair(1), round(70 - t_1))
 
