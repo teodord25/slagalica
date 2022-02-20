@@ -5,80 +5,80 @@ import time
 import random
 
 
-def isteklo_vreme(wndw, y, x, taster1, taster2, taster_izlaz, clr):
+def out_of_time(wndw, y, x, key1, key2, exit_key, clr):
     window = wndw
     
-    taster = 0
+    key = 0
 
     while True:
-        taster = window.getch()
+        key = window.getch()
 
         window.addstr(y, x, "Истекло је време,", clr)
-        window.addstr(y + 1, x, f"Aко желите покушати поново, притисните тастер \"{taster1}\"", clr)
-        window.addstr(y + 2, x, f"Aко желите наставити, притисните тастер \"{taster2}\"", clr)
-        if taster in [ord(str(taster1)), ord(str(taster2)), taster_izlaz]:
-            if taster in range(48, 58):
-                return int(chr(taster))
+        window.addstr(y + 1, x, f"Aко желите покушати поново, притисните тастер \"{key1}\"", clr)
+        window.addstr(y + 2, x, f"Aко желите наставити, притисните тастер \"{key2}\"", clr)
+        if key in [ord(str(key1)), ord(str(key2)), exit_key]:
+            if key in range(48, 58):
+                return int(chr(key))
             else:
-                return taster
+                return key
             
 
-def uspeh(wndw, y, x, taster1, taster2, taster_izlaz, clr, bodovi):
+def uspeh(wndw, y, x, key1, key2, exit_key, clr, bodovi):
     window = wndw
 
-    taster = 0
+    key = 0
 
     while True:
-        taster = window.getch()
+        key = window.getch()
 
         window.addstr(y, x, f"Победили сте! Ваш број бодова: {bodovi}", clr)
-        window.addstr(y + 1, x, f"Aко желите поновити ову игру, притисните тастер \"{taster1}\"", clr)
-        window.addstr(y + 2, x, f"Aко желите наставити, притисните тастер \"{taster2}\"", clr)
+        window.addstr(y + 1, x, f"Aко желите поновити ову игру, притисните тастер \"{key1}\"", clr)
+        window.addstr(y + 2, x, f"Aко желите наставити, притисните тастер \"{key2}\"", clr)
 
-        if taster in [ord(str(taster1)), ord(str(taster2)), taster_izlaz]:
-            if taster in range(48, 58):
-                return int(chr(taster))
+        if key in [ord(str(key1)), ord(str(key2)), exit_key]:
+            if key in range(48, 58):
+                return int(chr(key))
             else:
-                return taster
+                return key
 
 
-def neuspeh(wndw, y, x, taster1, taster2, taster_izlaz, clr):
+def neuspeh(wndw, y, x, key1, key2, exit_key, clr):
     window = wndw
 
-    taster = 0
+    key = 0
 
     while True:
-        taster = window.getch()
+        key = window.getch()
 
         window.addstr(y, x, f"Потрошили сте све покушаје!", clr)
-        window.addstr(y + 1, x, f"Aко желите покушати поново притисните тастер \"{taster1}\"", clr)
-        window.addstr(y + 2, x, f"Aко желите наставити, притисните тастер \"{taster2}\"", clr)
+        window.addstr(y + 1, x, f"Aко желите покушати поново притисните тастер \"{key1}\"", clr)
+        window.addstr(y + 2, x, f"Aко желите наставити, притисните тастер \"{key2}\"", clr)
         
-        if taster in [ord(str(taster1)), ord(str(taster2)), taster_izlaz]:
-            if taster in range(48, 58):
-                return int(chr(taster))
+        if key in [ord(str(key1)), ord(str(key2)), exit_key]:
+            if key in range(48, 58):
+                return int(chr(key))
             else:
-                return taster
+                return key
 
 
 def igra_korak_po_korak(stdscr):
     window = stdscr
-    taster = 0
+    key = 0
 
     window.clear()
     window.refresh()
 
     curses.halfdelay(1)
 
-    while taster not in [49, 50]:
-        taster = window.getch()
+    while key not in [49, 50]:
+        key = window.getch()
         window.addstr(0, 0, "Kojim pismom zelite da bude prikazan tekst?")
         window.addstr(1, 0, "pritisnite taster '1' za latinicu")
         window.addstr(2, 0, "pritisnite taster '2' za cirilicu")
         window.addstr(4, 0, "zaviseci od ovoga cete morati da unosite odgovore u odgovarajucem pismu u prvoj igri 'korak po korak'. ")
 
-        if taster in [49, 50]:
-            pismo_tekst = int(chr(taster))
+        if key in [49, 50]:
+            pismo_tekst = int(chr(key))
    
     window.clear()
 
@@ -95,7 +95,7 @@ def igra_korak_po_korak(stdscr):
     _ = 1
     pokusaj = []
     t_0 = 0
-    korak = 1
+    step = 1
     
 
     if pismo_tekst == 2:
@@ -122,11 +122,11 @@ def igra_korak_po_korak(stdscr):
             window.addstr(2 + ((red - 1) * 3), 94, "  ", curses.color_pair(1))
 
     # Game loop
-    while taster != 9:       # 'Tab' za izlazak
-        taster = window.getch()
+    while key != 9:       # 'Tab' za izlazak
+        key = window.getch()
 
-        while taster != 10 and _:
-            taster = window.getch()
+        while key != 10 and _:
+            key = window.getch()
             t_0 = time.time()
         
         # samo jednom brisem onaj tekst dole
@@ -142,46 +142,46 @@ def igra_korak_po_korak(stdscr):
         t_1 = time.time() - t_0
         
         # tajmer
-        window.addstr(2 + ((korak - 1) * 3), 94, str(round(90 - t_1)), curses.color_pair(2))
+        window.addstr(2 + ((step - 1) * 3), 94, str(round(90 - t_1)), curses.color_pair(2))
 
         # ` prikazuje resenje (za testiranje)
-        if taster == ord('`'):      
+        if key == ord('`'):
             window.addstr(0, 0, resenje)
 
-        if taster != -1:
+        if key != -1:
 
         #   # # # TESTIRAJ ZA BROJEVE NALAZI ZAGRADE()
-            if (taster == 32 or                      # space
-                    taster == 39 or                  # apostrof '
-                    taster in range(48, 58) or       # cifre
-                    taster in range(65, 91) or       # latinicna velika slova
-                    taster in range(97, 123) or      # latinicna mala slova
-                    taster in range(452, 461) or     # ['DŽ', 'Dž', 'dž', 'LJ', 'Lj', 'lj', 'NJ', 'Nj', 'nj']   # sad se tek pitam da li je ovo uopste moguce uneti tastaturom?
-                    taster in range(1024, 1320) or   # bas sva cirilicna slova
-                    taster in ['Č', 'Ć', 'D', 'Đ', 'Š', 'Ž']):
+            if (key == 32 or                      # space
+                    key == 39 or                  # apostrof '
+                    key in range(48, 58) or       # cifre
+                    key in range(65, 91) or       # latinicna velika slova
+                    key in range(97, 123) or      # latinicna mala slova
+                    key in range(452, 461) or     # ['DŽ', 'Dž', 'dž', 'LJ', 'Lj', 'lj', 'NJ', 'Nj', 'nj']   # sad se tek pitam da li je ovo uopste moguce uneti tastaturom?
+                    key in range(1024, 1320) or   # bas sva cirilicna slova
+                    key in ['Č', 'Ć', 'D', 'Đ', 'Š', 'Ž']):
                 
-                pokusaj.append(chr(taster).upper())
+                pokusaj.append(chr(key).upper())
                 window.addstr(20, 2, "".join(pokusaj).ljust(88), curses.color_pair(1))
                 cursor_x += 1
 
-        if taster == 263:
+        if key == 263:
             if len(pokusaj):   # da ne pokusa da popuje praznu listu
                 pokusaj.pop()
                 window.addstr(20, 2, "".join(pokusaj).ljust(88), curses.color_pair(1))
                 cursor_x -= 1
     
         # 'dalje'
-        if taster == ord('.'):
-            prikazi_recenicu(korak)
-            korak += 1
+        if key == ord('.'):
+            prikazi_recenicu(step)
+            step += 1
         
-        if korak == 7:                              
+        if step == 7:
             window.addstr(20, 2, resenje, curses.color_pair(1))
             return neuspeh(window, 22, 2, 1, 2, 9, curses.color_pair(1))
         
 
         # enter za unosenje, a _ je tu da se prvi enter ne racuna kao netacan unos
-        if taster == 10 and not _:
+        if key == 10 and not _:
             
             # ako odgovor sadrzi zagradu onda proveravam samo da li se pokusaj nalazi u resenju
             # znam da ovako moze doci do pogodka ako je korisnik uneo samo jedno slovo,
@@ -196,7 +196,7 @@ def igra_korak_po_korak(stdscr):
 
                     window.addstr(20, 2, resenje.ljust(87), curses.color_pair(1))
 
-                    return uspeh(window, 22, 2, 1, 2, 9, curses.color_pair(1), round((90 - t_1) / korak))
+                    return uspeh(window, 22, 2, 1, 2, 9, curses.color_pair(1), round((90 - t_1) / step))
 
 
                 else:
@@ -217,7 +217,7 @@ def igra_korak_po_korak(stdscr):
 
                     window.addstr(20, 2, resenje.ljust(87), curses.color_pair(1))
 
-                    return uspeh(window, 22, 2, 1, 2, 9, curses.color_pair(1), round((90 - t_1) / korak))
+                    return uspeh(window, 22, 2, 1, 2, 9, curses.color_pair(1), round((90 - t_1) / step))
 
 
                 else:
@@ -236,7 +236,7 @@ def igra_korak_po_korak(stdscr):
          
         if t_1 > 90:
             while True:
-                return isteklo_vreme(window, 22, 2, 1, 2, 9, curses.color_pair(1))
+                return out_of_time(window, 22, 2, 1, 2, 9, curses.color_pair(1))
 
         window.move(20, cursor_x)
 
@@ -395,36 +395,38 @@ def igra_skocko(stdscr):
     ispisi_skocka()
 
 
-    taster = 0
-    korak = 0   # trenutni korak na kojem se nalazi igrac (red u tabeli)
+    key = 0
+    step = 0   # trenutni korak na kojem se nalazi igrac (red u tabeli)
     char_i = 0  # indeks karaktera koji se upisuje (za ispis u tabeli i da znamo kad je ukucano svih 4)
 
-    _ = 1       # da bi se samo jedanput proveravao 'Enter'
+    _ = 1
     t_0 = 0
     t = 0
 
-    window.move(21, 16)     # pomeranje kursora
-
+    window.move(21, 16)     # move the cursor
 
     # .getch() hvata bilo koji karakter koji se pritisne na tastaturi i cuva ga.
     # Nekom crnom magijom to ne zaustavlja tok programa i mozemo u realnom vremenu da
     # cuvamo neke unose i da osvezavamo ispis u isto vreme.
     # takodje osvezava ekran
 
+    # .getch() catches key press events and stores the ascii value of them
+    # without stopping execution (unlike input()) allowing the game to run
+    # constantly and have user input (controls in this case) at the same time.
 
     # Game loop
-    while taster != 9:    # izlazak iz programa pritisom tastera "Tab"
+    while key != 9:    # "Tab" to exit
 
-        # beskonacna petlja dok korisnik ne pritisne "Enter"
-        while taster != 10 and _:
-            taster = window.getch()
+        # repeat until user presses "Enter" key
+        while key != 10 and _:
+            key = window.getch()
             t_0 = time.time()
 
-        # ` prikazuje resenje (za testiranje)
-        if taster == ord('`'):      
+        # ` reveal the answer (testing purposes)
+        if key == ord('`'):
             window.addstr(0, 0, "".join(resenje))
            
-        # samo jednom brisem onaj tekst dole
+        # _ so that the text is only deleted once
         if _:
             for i in range(3):
                 for j in range(60):
@@ -432,12 +434,12 @@ def igra_skocko(stdscr):
             window.addstr(24, 4, "Излазак из игре притиском тастера \"Tab\".", curses.color_pair(1))
         _ = 0
  
-        if 49 <= taster <= 54:
-            kraj_reda = ispis_i_pamcenje(chr(taster), korak, char_i)
+        if 49 <= key <= 54:
+            kraj_reda = ispis_i_pamcenje(chr(key), step, char_i)
             char_i += 1
             if kraj_reda:
-                pogodci = proveri(korak)
-                korak += 1
+                pogodci = proveri(step)
+                step += 1
                 char_i = 0
                 
                 if pogodci == [5, 5, 5, 5]:    
@@ -451,7 +453,7 @@ def igra_skocko(stdscr):
                             window.addstr(16, 6 + (i * 4), j, boja)
                     
 
-                        return uspeh(window, 20, 4, 2, 3, 9, curses.color_pair(1), round((95 - t) / korak))
+                        return uspeh(window, 20, 4, 2, 3, 9, curses.color_pair(1), round((95 - t) / step))
                     
 
         t_1 = time.time() - t_0
@@ -471,7 +473,7 @@ def igra_skocko(stdscr):
         if 90 < t_1 < 95:
             window.addstr(13, 24, "▀", curses.color_pair(1))
         
-        if korak == 6 or t_1 > 95:
+        if step == 6 or t_1 > 95:
 
             # pravim novi dict gde su simboli kljucevi a brojevi boja vrednosti
             tmp_dct = {i: j for (i, j) in skocko_dict.values()}
@@ -486,14 +488,14 @@ def igra_skocko(stdscr):
 
         if t_1 > 95:
             while True:
-                taster = window.getch()
+                key = window.getch()
                 
-                return isteklo_vreme(window, 20, 4, 2, 3, 9, curses.color_pair(1))
+                return out_of_time(window, 20, 4, 2, 3, 9, curses.color_pair(1))
 
 
-        window.move(2 + korak * 2, 6 + char_i * 4)
+        window.move(2 + step * 2, 6 + char_i * 4)
         
-        taster = window.getch()
+        key = window.getch()
     return 9        # ord("Tab") == 9
     
 
@@ -521,7 +523,7 @@ def igra_spojnice(stdscr):
     x = 0
     y = 0
 
-    taster = 0
+    key = 0
     t_0 = 0
     _ = 1
     pogodci = 0
@@ -532,16 +534,16 @@ def igra_spojnice(stdscr):
     [stdscr.addstr(i, 0, j, curses.color_pair(1)) for i, j in enumerate(ekran)]
 
     # Game loop
-    while taster != 9:
-        taster = window.getch()
+    while key != 9:
+        key = window.getch()
 
         # beskonacna petlja dok korisnik ne pritisne "Enter"
-        while taster != 10 and _:
-            taster = window.getch()
+        while key != 10 and _:
+            key = window.getch()
             t_0 = time.time()
 
         # ` prikazuje resenje (za testiranje)
-        if taster == ord('`'):
+        if key == ord('`'):
             pass
 
         # samo jednom da se pokrene
@@ -570,7 +572,6 @@ def igra_spojnice(stdscr):
                     if j == "/":
                         indeksi_2.append(i)
 
-
             levo = [tabela2[i][:j] for i,j in enumerate(indeksi_2)]
             desno = [tabela2[i][j+1:] for i,j in enumerate(indeksi_2)]
 
@@ -582,11 +583,9 @@ def igra_spojnice(stdscr):
 
             spojeno_random = list(zip(levo, desno))
 
-
             resenje = {i: j for (i, j) in spojeno}
 
             boja = curses.color_pair(1)
-
 
             for x in range(2):
                 for y in range(8):
@@ -595,7 +594,6 @@ def igra_spojnice(stdscr):
             levi = 0
             
             [window.addstr(4 + i, 50, "█", curses.color_pair(5)) for i in range(15)]
-
 
         t_1 = time.time() - t_0
 
@@ -611,11 +609,11 @@ def igra_spojnice(stdscr):
                 for y in range(8):
                     window.addstr(4 + (y * 2), 6 + (x * 49), spojeno[y][x].center(40), boja)
 
-            return isteklo_vreme(window, 20, 2, 3, 1, 9, curses.color_pair(1))
+            return out_of_time(window, 20, 2, 3, 1, 9, curses.color_pair(1))
 
 
                         # prvi enter ne racunamo
-        if taster == 10 and not _:
+        if key == 10 and not _:
             if x == 0:
                 if levi:
                     window.addstr(4 + (y * 2), 6 + (x * 49), spojeno_random[y][x].center(40), curses.color_pair(1))
@@ -651,22 +649,20 @@ def igra_spojnice(stdscr):
 
                         return uspeh(window, 20, 2, 3, 1, 9, curses.color_pair(1), round(70 - t_1))
 
-
         _ = 0
 
-        if taster == curses.KEY_UP:
+        if key == curses.KEY_UP:
             y -= 1
 
-        if taster == curses.KEY_DOWN:
+        if key == curses.KEY_DOWN:
             y += 1
 
-        if taster == curses.KEY_RIGHT:
+        if key == curses.KEY_RIGHT:
             x += 1
 
-        if taster == curses.KEY_LEFT:
+        if key == curses.KEY_LEFT:
             x -= 1
 
-        # sigurno postoji bolje resenje ali ovo mi prvo pada na pamet
         if y > 7:
             y = 7
 
@@ -683,6 +679,7 @@ def igra_spojnice(stdscr):
 
     return 9
 
+
 def main():
     print("""
     Добродошли у игру!
@@ -695,17 +692,14 @@ def main():
                           а величинa фонтa 23 pt.
                           """)
 
-
     input("    Када сте спремни започети игру, притисните тастер \"Ентер\".")
-    
-    # idk = nisam siguran da li je ovo dobro resenje, ali radi.
 
-    def izlazak():
+    def game_exit():
         print("\n\n\n\tИзашли сте из игре.\n\n\tХвала на игрању!\n")
         quit()
 
-    idk = {     # ord('Tab') == 9, za izlazak
-        9: "izlazak()",
+    idk = {     # ord('Tab') == 9 -> exit game
+        9: "game_exit()",
         1: "curses.wrapper(igra_korak_po_korak)",
         2: "curses.wrapper(igra_skocko)",
         3: "curses.wrapper(igra_spojnice)"
@@ -722,6 +716,7 @@ def main():
     смањите величину фонта или повећајте величину терминала.
                     """)
             quit()
+
 
 if __name__ == "__main__":
     main()
