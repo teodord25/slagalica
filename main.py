@@ -89,7 +89,7 @@ def igra_korak_po_korak(stdscr):
     curses.init_pair(4, curses.COLOR_WHITE, curses.COLOR_RED)
     curses.init_pair(5, curses.COLOR_WHITE, curses.COLOR_GREEN)
     
-    screen = open("txt_fajlovi/tabele_korak.txt", "r").readlines()
+    screen = open("txt_files/tabele_korak.txt", "r").readlines()
     [stdscr.addstr(i, 0, j, curses.color_pair(1)) for i, j in enumerate(screen)]
 
     _ = 1
@@ -98,9 +98,9 @@ def igra_korak_po_korak(stdscr):
     step = 1
 
     if lang_script == 2:
-        file = "txt_fajlovi/resenja_korak_po_korak_cyrillic.txt"
+        file = "txt_files/resenja_korak_po_korak_cyrillic.txt"
     else:
-        file = "txt_fajlovi/resenja_korak_po_korak_latin.txt"
+        file = "txt_files/resenja_korak_po_korak_latin.txt"
 
     lines = open(file, "r").readlines()
     indicies = [i for i, j in enumerate(lines) if j == '#\n']
@@ -309,7 +309,7 @@ def igra_skocko(stdscr):
             return 1
 
     def show_tables():
-        screen = open("txt_fajlovi/tabele_skocko.txt", "r").readlines()
+        screen = open("txt_files/tabele_skocko.txt", "r").readlines()
         [stdscr.addstr(i, 0, j, curses.color_pair(1)) for i, j in enumerate(screen)]
 
         for i in range(1, 7):
@@ -333,7 +333,7 @@ def igra_skocko(stdscr):
         window.addstr(13, 24, "▀", curses.color_pair(2))
 
     def show_skocko():
-        skocko = open("txt_fajlovi/skocko.txt", "r").readlines()
+        skocko = open("txt_files/skocko.txt", "r").readlines()
         for y in enumerate(skocko):
             for x in enumerate(y[1]):
                 clr = 1
@@ -483,7 +483,7 @@ def igra_spojnice(stdscr):
 
     window.move(4, 45)
 
-    screen = open("txt_fajlovi/tabele_spojnice.txt", "r").readlines()
+    screen = open("txt_files/tabele_spojnice.txt", "r").readlines()
     [stdscr.addstr(i, 0, j, curses.color_pair(1)) for i, j in enumerate(screen)]
 
     # Game loop
@@ -502,7 +502,7 @@ def igra_spojnice(stdscr):
                     window.addstr(21 + i, 0 + j, " ", curses.color_pair(1))
             window.addstr(24, 0, "Излазак из игре притиском тастера \"Tab\"".rjust(99), curses.color_pair(1))
 
-            lines = open("txt_fajlovi/spojnice.txt", "r").readlines()
+            lines = open("txt_files/spojnice.txt", "r").readlines()
             indicies = [i for i, j in enumerate(lines) if j == "#\n"]
 
             index = random.choice(indicies)
